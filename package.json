@@ -12,8 +12,8 @@
     "node-sass": "^4.9.2"
   },
   "dependencies": {
+    "debug": "^3.1.0",
+    "hoek": "^5.0.4",
     "live-server": "^1.2.0"
   }
 }
-
-

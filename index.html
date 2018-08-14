@@ -68,9 +68,24 @@
                     </div>
                     <div class="col-1-of-2">
                         <div class="composition">
-                            <img src="images/nat-1-large.jpg" alt=" " class="composition__photo composition__photo--p1">
+                        	<img srcset="images/nat-1.jpg 300w, images/nat-1-large.jpg 1000w"
+                        		 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" 
+                        		 alt="Photo 1"
+                        		 class="composition__photo composition__photo--p1"
+                        		 src="images/nat-1-large.jpg">
+                        	<img srcset="images/nat-2.jpg 300w, images/nat-2-large.jpg 1000w"
+                        		 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" 
+                        		 alt="Photo 2"
+                        		 class="composition__photo composition__photo--p2"
+                        		 src="images/nat-2-large.jpg">
+                        	<img srcset="images/nat-3.jpg 300w, images/nat-3-large.jpg 1000w"
+                        		 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" 
+                        		 alt="Photo 3"
+                        		 class="composition__photo composition__photo--p3"
+                        		 src="images/nat-3-large.jpg">
+                            <!-- <img src="images/nat-1-large.jpg" alt=" " class="composition__photo composition__photo--p1">
                             <img src="images/nat-2-large.jpg" alt=" " class="composition__photo composition__photo--p2">
-                            <img src="images/nat-3-large.jpg" alt=" " class="composition__photo composition__photo--p3">
+                            <img src="images/nat-3-large.jpg" alt=" " class="composition__photo composition__photo--p3"> -->
                         </div>
                     </div>
                 </div>
@@ -305,7 +320,10 @@
         <!-- Footer -->
         <footer class="footer">
             <div class="footer__logo-box">
-                <img src="images/logo-green-2x.png" alt="Full logo" class="footer__logo">
+				<picture class="footer__logo">
+					<source srcset="images/logo-green-small-1x.png 1x, images/logo-green-small-2x.png 2x" media="(max-width: 37.5em)">
+					<img srcset="images/logo-green-1x.png 1x, images/logo-green-2x.png 2x" alt="Full logo" src="images/logo-green-2x.png">
+				</picture>
             </div>
             <div class="row">
                 <div class="col-1-of-2">
@@ -338,7 +356,7 @@
                     <a href="#section-tours" class="popup__close">&times;</a>
                     <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
                     <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read this terms before booking</h3>
-                    <p class="popup__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    <p class="popup__text">Built by: JS Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -412,9 +430,5 @@
                 </div>
             </div>
         </section> -->
-
-
-
-        
     </body>
 </html>
